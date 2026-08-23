@@ -1,0 +1,38 @@
+{
+  "_comment": "Detection thresholds for Log Analyzer. Edit these values to tune sensitivity.",
+
+  "failed_login_threshold": 5,
+  "failed_login_window_seconds": 300,
+
+  "request_threshold": 100,
+  "request_window_seconds": 60,
+
+  "error_threshold": 30,
+
+  "suspicious_paths": [
+    "/admin",
+    "/login",
+    "/wp-admin",
+    "/wp-login.php",
+    "/phpmyadmin",
+    "/etc/passwd",
+    "/.env",
+    "/config",
+    "/.git",
+    "/backup",
+    "/xmlrpc.php"
+  ],
+
+  "attack_patterns": [
+    "\\.\\./",
+    "/etc/passwd",
+    "union\\s+select",
+    "'\\s*or\\s*'1'\\s*=\\s*'1",
+    "<script",
+    "select\\s+\\*\\s+from",
+    "drop\\s+table",
+    "%00",
+    "cmd\\.exe",
+    "/bin/sh"
+  ]
+}

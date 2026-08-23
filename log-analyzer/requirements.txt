@@ -1,0 +1,4 @@
+# Log Analyzer uses only the Python standard library.
+# No external dependencies are required.
+#
+# Requires: Python 3.8+
