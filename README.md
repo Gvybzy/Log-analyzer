@@ -293,35 +293,6 @@ Specifically:
 - HTML report output in addition to JSON
 - Basic rate-limiting recommendations based on findings
 
-## What I Learned
-
-Building this project involved practicing several core cybersecurity and
-Python concepts:
-
-- **Log parsing** — using regular expressions to reliably extract
-  structured fields (IP, timestamp, method, path, status) from
-  semi-structured text, and gracefully skipping lines that don't match.
-- **Regular expressions** — writing patterns for both log-line structure
-  and for recognizing attack-like strings (e.g. `union select`,
-  `../`), including the need to URL-decode input before matching, since
-  attackers often percent-encode payloads.
-- **IP address tracking** — grouping events by source IP using
-  dictionaries (`collections.defaultdict`) to analyze behavior per client.
-- **Event counting** — using `collections` to efficiently tally requests,
-  errors, and login attempts.
-- **Time-window analysis** — implementing a sliding time window (using
-  `datetime`/`timedelta`) to detect bursts of activity, which is a common
-  technique in intrusion detection.
-- **Detection rules** — translating security concepts ("brute force",
-  "scanning", "flooding") into concrete, testable code logic with
-  explicit thresholds.
-- **False positives** — understanding that automated detection is a
-  starting point for investigation, not a verdict, and designing output
-  language ("possible", "suspicious", "potential") accordingly.
-- **Basic security monitoring** — getting hands-on with the kind of
-  thinking that underlies real SOC tooling, while learning where a script
-  like this reaches its limits compared to production-grade systems.
-
 ---
 
 **Disclaimer:** This tool works entirely locally. It does not upload logs,
