@@ -1,9 +1,6 @@
 # Python Log Analyzer
 
-A beginner-friendly, command-line **log analysis tool** that scans web server
-access logs and flags rule-based indicators of suspicious activity — such as
-possible brute-force login attempts, requests to sensitive paths, HTTP error
-spikes, request flooding, and known attack-like URL patterns.
+
 
 This project was built as a **student cybersecurity lab exercise** to
 demonstrate practical Python skills combined with fundamental log-analysis
