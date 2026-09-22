@@ -17,7 +17,19 @@ and threat-detection concepts.
 
 ## Table of Contents
 
-
+1. [Project Overview](#project-overview)
+2. [Why Log Analysis Matters in Cybersecurity](#why-log-analysis-matters-in-cybersecurity)
+3. [Features](#features)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Supported Log Format](#supported-log-format)
+7. [Detection Rules](#detection-rules)
+8. [Example Output](#example-output)
+9. [Project Structure](#project-structure)
+10. [Testing](#testing)
+11. [Limitations](#limitations)
+12. [Future Improvements](#future-improvements)
+13. [What I Learned](#what-i-learned)
 
 ---
 
